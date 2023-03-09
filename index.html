@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- <script src="main.js"></script> -->
+  </head>
+    <body>
+    
+    <h4>It's <span id="player"></span>'s turn!</h4>
+    <div id="connect4"></div>
+    <br>
+    <button id="restart">Restart</button>
+    <script type="module">
+      import {connect4} from "./connect4.js"
+      
+      const p4 = new connect4('#connect4', {
+        ROWS:6,
+        COLS:7,
+        p1:'val',
+        p2:'nahe',
+        c1:'green',
+        c2:'red',
+      }
+
+      );
+
+    </script>
+  </body>
+</html>
